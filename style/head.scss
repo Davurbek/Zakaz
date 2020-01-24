@@ -1,0 +1,747 @@
+.asosiy{
+    background: #fafafa;
+    padding: 0px;
+    width: 100%!important;
+    height: 100%!important;
+    margin: 0 auto;
+    // border: 4px solid red;
+    .enterModal{
+        top:0px;
+        position: fixed;
+        width:100%;
+        height: 100%;
+        margin:0 auto;
+        color: #5f6368;
+        background: rgba(255, 255, 255, 0.8);
+        z-index: 111;
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .enterModalForm{
+            box-shadow: 0px 0px 10px 5px #f1f3f4;
+            background: #fff;
+            width:40%;
+            margin:0 auto;
+            border: 1px solid #f1f3f4;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            font: 14px 'Montserrat';
+            // border-radius: 0px 10px 0px 0px;
+            .enterModalFormHead{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                border-left: 4px solid #4285f4;
+                // border-radius: 0px 10px 0px 0px;
+                .enterModalFormHeadTitle{
+                    text-transform: uppercase;
+                    font: 15px 'Montserrat Bold';            
+                    line-height: 40px;
+                    padding: 5px 0px 5px 20px;
+                }
+                .enterModalFormHeadClose{
+                    cursor: pointer;
+                    padding: 5px 20px 5px 20px;
+                    line-height: 40px;
+                    color: white;
+                    // border-radius: 0px 10px 0px 0px;
+                    background: #4285f4;
+                }
+            }
+            .enterModalFormMain{
+                padding: 10px;
+                font: 12px "Montserrat Bold";
+                line-height: 35px;
+                text-transform: uppercase;
+                > form{
+                    padding: 0px;
+                    > input[type='text'], > input[type='password']{
+                        background: white;
+                        border: 0px;
+                        border-bottom: 1px solid #4285f5;
+                        padding: 5px;
+                        margin-left: 10px;
+                        text-transform: uppercase;
+                        outline: none;
+                        font: 10px "Ubuntu Bold";                              
+                    }
+                    > .col-lg-1{
+                        cursor: pointer;
+                    }
+                    .enterModalPasswordRecovery{
+                        line-height: 50px;
+                        align-items: center;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        margin-top: 20px;
+                        margin-bottom: 10px;                    
+                        > a{
+                            outline: none;                              
+                            color:#5f6368;
+                            align-self: center;
+                            text-transform: uppercase;
+                        }
+                        > input[type="submit"]{
+                            border: 1px solid #4285f5;
+                            color:white;
+                            background: #4285f5;
+                            padding:5px 40px;
+                            line-height:30px;
+                            border-radius:5px;
+                            text-transform: uppercase;
+                            cursor: pointer;
+                            &:hover{
+                                background: #4285d2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .signinModal{
+        top:0px;
+        position: fixed;
+        width:100%;
+        height: 100%;
+        margin:0 auto;
+        color: #5f6368;
+        background: rgba(255, 255, 255, 0.8);
+        z-index: 111;
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .signinModalForm{
+            box-shadow: 0px 0px 10px 5px #f1f3f4;
+            background: #fff;
+            width:40%;
+            margin:0 auto;
+            border: 1px solid #f1f3f4;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            font: 14px 'Montserrat';
+            // border-radius: 0px 10px 0px 0px;
+            .signinModalFormHead{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                border-left: 4px solid #4285f4;
+                // border-radius: 0px 10px 0px 0px;
+                .signinModalFormHeadTitle{
+                    text-transform: uppercase;
+                    font: 15px 'Ubuntu Bold';                
+                    line-height: 40px;
+                    padding: 5px 0px 5px 20px;
+                }
+                .signinModalFormHeadClose{
+                    cursor: pointer;
+                    padding: 5px 20px 5px 20px;
+                    line-height: 40px;
+                    color: white;
+                    // border-radius: 0px 10px 0px 0px;
+                    background: #4285f4;
+                }
+            }
+            .signinModalFormMain{
+                padding: 10px;
+                font: 12px "Montserrat Bold";
+                line-height: 30px;
+                text-transform: uppercase;
+                > form{
+                    padding: 0px;
+                    > input[type='text'], > input[type='password']{
+                        background: white;
+                        border: 0px;
+                        border-bottom: 1px solid #4285f5;
+                        padding: 5px;
+                        margin-left: 10px;
+                        text-transform: uppercase;
+                        outline: none;
+                        font: 10px "Ubuntu Bold";                              
+                    }
+                    .signinModalPasswordRecovery{
+                        line-height: 50px;
+                        align-items: center;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        margin-top: 20px;
+                        margin-bottom: 10px;                    
+                        > a{
+                            outline: none;                              
+                            color:#5f6368;
+                            align-self: center;
+                            text-transform: uppercase;
+                        }
+                        > input[type="submit"]{
+                            border: 1px solid #4285f5;
+                            color:white;
+                            background: #4285f5;
+                            padding:5px 40px;
+                            line-height:30px;
+                            border-radius:5px;
+                            text-transform: uppercase;
+                            cursor: pointer;
+                            &:hover{
+                                background: #4285d2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    header{
+        z-index: 110;
+        background: white;
+        width: 100%;
+        margin-bottom: 20px;
+        // margin: 0 auto!important;
+        position: sticky;
+        padding: 0px;
+        top:0;
+        box-shadow: 0px 1px 10px 0px #5f6368;
+        .topPan{
+            // margin: 0px;
+            > div.row:first-child{
+                // border: 4px solid aqua;
+                line-height: 90px;
+                div.logo{
+                    text-transform: uppercase;
+                    align-self: center;
+                    font: 28px 'Ubuntu Bold';
+                    // border: 1px solid red;
+                    > span{
+                        color: #4285f4;
+                    }
+                }
+                 div.topPaB{
+                    height: 90px;
+                    margin: 0px;
+                    // border: 1px solid blue;
+                    align-items: center;
+                    // .enterModal{
+                    //     width:100%;
+                    //     margin:0 auto;
+                    //     display: fixed;
+                    //     z-index:100;
+                    //     background:#fff;
+                    // }
+                    .topRightGuests{
+                        // border: 1px solid red;
+                        text-align: right;
+                        padding: 0px;
+                        align-items: center;
+                        a{
+                            cursor: pointer;
+                            padding: 0px;
+                            font: 13px 'Montserrat Bold';
+                            color: #5f6368;
+                            text-transform: uppercase;
+                        }
+                        & > span{
+                            line-height: 1px;
+                            align-self: center;
+                            color: #e5e7e7;
+                        }
+                    }
+                    .topRightPanel{
+                        // border: 1px solid red;
+                        text-align: right;
+                        padding: 10px!important;
+                        align-items: center;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        .link{
+                            padding: 0px;
+                            font: 13px 'Montserrat Bold';
+                            color: #5f6368;
+                            text-transform: uppercase;
+                            > a{
+                                color: #5f6368;
+                                text-decoration: none;
+                                // background: chartreuse;
+                                display: flex;                            
+                                align-items: center;                                
+                            }
+                            > .rightPanelDrop{
+                                box-shadow: 3px 3px 3px 0px #f1f3f4;
+                                text-align: left;
+                                padding: 5px;
+                                position: absolute;
+                                z-index: 1;
+                                background: white;
+                                display: none;
+                                font: 11px 'Montserrat Bold';
+                                flex-direction: column;
+                                justify-content: flex-start;
+                                > a{
+                                    text-decoration: none;
+                                    color: #5c6c79;
+                                    line-height: 25px;
+                                    display: block;
+                                    > span:first-child{
+                                        padding: 5px;
+                                    }
+                                    > span:nth-child(2){
+                                        padding: 2px 6px;
+                                        line-height: 25px;
+                                        border-radius: 10px;
+                                        background: #4285f4;
+                                        color: white;
+                                    }
+                                }
+                            }
+                            &:hover{
+                                > .rightPanelDrop{
+                                    display: flex;
+
+                                }
+                            }
+                        }
+                        & > span{
+                            line-height: 1px;
+                            align-self: center;
+                            color: #e5e7e7;
+                        }
+                    }
+                    form{
+                        // border: 1px solid red;
+                        line-height: 40px;
+                        align-items: center;
+                        position: relative;                    
+                        &:hover{
+                            box-shadow: 1px 1px 5px 1px #f1f3f4;
+                        }
+                        > .col-1:nth-child(1){
+                            line-height: 40px;
+                            padding: 4px 0px 4px 10px!important;
+                            background: #f1f3f4;
+                            border-radius: 8px 0px 0px 8px;
+                            border: 2px solid #f1f3f4;
+                            // margin-left: 0px;
+                            // margin-right: -4px!important;
+                            color: #5f6368;
+                        }
+                        > .fa{
+                            line-height: 40px;
+                            padding: 4px;
+                            border: 2px solid #f1f3f4;
+                            background: #f1f3f4;
+                            color: #5f6368;
+                            border-radius: 0px 8px 8px 0px;
+                            cursor: pointer;
+
+                        }
+                        > input[type="text"]{
+                            border: 2px solid #f1f3f4;
+                            background: #f1f3f4;
+                            line-height: 40px;
+                            padding: 4px 0px 4px 10px!important;
+                            margin-left: 0px;
+                            margin-right: 0px;
+                            outline: none;
+                        }
+                    }
+                    .searchResults{
+                        z-index: 1;
+                        width: 100%;
+                        display: none;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        position: relative;
+                        background: white;
+                        > .allResults{
+                            width: 100%;
+                            background: white;
+                            position: absolute;
+                            display: flex;
+                            justify-content: flex-start;
+                            flex-direction: column;
+                            > a{
+                                text-decoration: underline;
+                                text-transform: uppercase;
+                                width: 100%;
+                                font: 12px 'Montserrat Bold';
+                                text-align: center;
+                                margin: 0 auto;
+                                line-height: 30px;
+                            }
+                            > div{
+                                border: 1px solid #f1f3f4;
+                                color: #5c6c79;
+                                > *{
+                                    color: #5c6c79;
+                                    padding: 0px;
+                                    margin: 0px;
+                                    align-items: center;
+                                    line-height: 0px;
+                                    font: 12px "Montserrat Bold";
+                                    text-transform: uppercase;
+                                }
+                                > .col-3{
+                                    // position: absolute;                                    
+                                    // height: 50px;                
+                                    align-items: center;
+                                    text-align: center;
+                                    padding: 10px;                                
+                                    align-self: center;
+                                    border: 1px solid #f1f3f4;                                    
+                                }
+                                > .col-9{
+                                    > .row:first-child{
+                                        align-items: center;
+                                        > a{
+                                            margin-left: 10px;
+                                            // padding: 5px;         
+                                            align-self: center;                                   
+                                            line-height: 40px;
+                                            text-decoration: none;
+                                            color: #4285f4;
+                                        }
+                                        > .col-4{
+                                            text-align: center;
+                                            // background: #4285f4;
+                                            color: #4285f4;
+                                            margin: 5px;
+                                            text-decoration: underline;
+                                            align-self: center;
+                                            border-radius: 15px;
+                                            line-height: 30px;
+                                        }
+                                    }
+                                    > .row:nth-child(2){
+                                        line-height: 40px;
+                                        justify-content: center;
+                                        .resultButtonView{
+                                            margin: 5px 20px 5px 20px; 
+                                            line-height: 30px;
+                                            padding: 5px 10px;
+                                            background: white;
+                                            color: #4285f4;
+                                            border: 1px solid white;
+                                            border-radius: 5px;    
+                                            // text-decoration: underline;                                        
+                                        }
+                                        .resultButtonAddToWallet{
+                                            align-self: center;
+                                            margin: 5px 20px 5px 20px; 
+                                            line-height: 30px;
+                                            padding: 2px 10px;
+                                            background: #4285f4;
+                                            color: white;
+                                            border: 1px solid white;
+                                            border-radius: 15px;                                            
+                                            &:hover{
+                                                cursor: pointer;
+                                            }
+                                        }
+                                    }
+                                }
+                            }                            
+                        }
+                    }
+                    .hideSearchPanel{
+                        display: none!important;
+                    }                    
+                    .searchPanel{
+                        display: block;
+                        z-index: 1;
+                        width: 100%;
+                        height: 100%;
+                        background: white;
+                        left: 0px;
+                        position: absolute;
+                        color: #5f6368;
+                        // border: 3px;
+                        // border:3px solid red;
+                        > form{
+                            padding: 5px;
+                            align-items: center;
+                            text-align: left!important;
+                            font: 12px 'Montserrat Bold';
+                            border-radius: 5px;
+                            box-shadow: 0px 1px 10px 0px #d9dbdb;
+                            background: white;
+                            // position: absolute;
+                            .header{
+                                > *{
+                                    border: 0px;
+                                    color: #5f6368;
+                                    outline: none;
+                                }
+                                label{
+                                    padding: 5px;
+                                }
+                                &:first-child{
+                                    > select{                                        
+                                        padding: 10px;
+                                        border-bottom: 1px solid #f1f3f4;
+                                    }
+                                }
+                                &:nth-child(2){
+                                    > input[type="number"]{
+                                        border-bottom: 1px solid #f1f3f4;
+                                        padding: 5px;
+                                        margin-left: 5px;
+                                    }
+                                    > span{
+                                        font-size: 9px;
+                                    }
+                                }
+                                &:nth-child(3){
+                                    > input[type="text"]{
+                                        padding: 5px;
+                                        border-bottom: 1px solid #f1f3f4;
+                                    }
+                                }
+                                &:nth-child(4){
+                                    padding: 5px;
+                                    > input[type="submit"]{
+                                        background: #4285f4;
+                                        color: white;
+                                        padding: 8px 20px;
+                                        text-transform: uppercase;
+                                        border: 1px solid #4285f4;
+                                        border-radius: 5px;
+                                        font: 12px 'Montserrat Bold';
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            > div.row:nth-child(2){
+                // margin: 0px;
+                border-top: 1px solid #f1f3f4;
+                line-height: 40px;
+                text-transform: uppercase;
+                .hideWalletPanel{
+                    display: none!important;
+                }        
+                .col, .col-3, .col-2{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: row;
+                    .leftPanel{
+                        width: 100%;
+                        margin: 0px 15px 0px 15px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        // background: black;
+                        .leftPanelIcon{
+                            padding: 5px;
+                            font-size: 20px;
+                            color: #4285f4;
+                        }
+                        .leftPanelText{
+                            padding: 5px;
+                            // color: #4285f4;
+
+                            font: 14px 'Montserrat Bold';
+                        }
+                    }
+                }
+                .col-3{
+                    padding: 0px 20px 0px 20px;
+                    // background: black;
+                    .savatchaniKorish{
+                        position: absolute;
+                        margin-top: 50px;
+                        background: black;
+                        width:100%;                    
+                        color:white;
+                        line-height: 50px;
+                    }
+                }
+                .col{
+                    word-wrap: break-word;
+                    font: 8px 'Montserrat Bold'!important;
+                    align-items: center;
+                    a{
+                        line-height: 40px;
+                        margin: 0px;
+                        padding: 0px 5px;
+                        // border-top: 2px solid white;
+                        &:hover{
+                            // background: #4b2f2f;
+                            color: #4285f4;
+                            // border-bottom: 2px solid #4285f4;
+                        }
+                        .leftPanelText, .leftPanelIcon{
+                            line-height: 40px;
+                            font: 10px 'Ubuntu Bold';
+                        }
+                    }
+                }
+                > .col-3:first-child{
+                    border-right: 1px solid #e5e7e7;                    
+                    background: #4285f4;
+                    color: white;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    position: relative;
+                    > ul{
+                        display: none;
+                        background: white;
+                        list-style: none;
+                        position: absolute;
+                        top: 50px;
+                        padding: 0px;
+                        width: 100%;
+                        > li{
+                            border-bottom: 1px solid #f1f3f4;
+                            text-decoration: none;
+                            color: #5c6c79;
+                            display: flex;
+                            position: relative;
+                            // border: 1px solid red;
+                            // width: 220px;
+                            a{
+                                width: 100%;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: flex-start;
+                                align-items: center;
+                                // border-bottom: 1px solid #f1f3f4;
+                                text-decoration: none;
+                                color: #5c6c79;
+                                > span{
+                                    display: block;
+                                    &:first-child{
+                                        line-height: 25px;
+                                        text-align: center;
+                                        width: 40px;
+                                        padding: 8px;
+                                    }
+                                    &:nth-child(2){
+                                        text-transform: none;
+                                        line-height: 30px;
+                                        font: 14px 'Montserrat';
+                                    }
+                                }
+                                &:hover{
+                                    background: #f1f3f4;
+                                }
+                            }
+                            > ul{
+                                display: none;
+                                flex-direction: row;
+                                justify-content: flex-start;
+                                // margin-left: 285px;
+                                background: white;
+                                position: absolute;
+                                // float: right;
+                                // color: ;
+                                padding: 0px;
+                                list-style: none;
+                                width: 100%;
+                                li:first-child{
+                                    top: 0px;
+                                    right: -285px;
+                                    border-bottom: 1px solid #f1f3f4;
+                                    text-decoration: none;
+                                    color: #5c6c79;
+                                    width: 100%;
+                                    background: white;
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    flex-direction: column;
+                                    position: absolute;
+                                    .kategoriyaNomi{
+                                        padding: 5px;
+                                        font: 12px 'Montserrat Bold';
+                                    }
+                                    > a{
+                                        font: 10px 'Montserrat Bold';
+                                    }        
+                                }
+                                li:nth-child(2){
+                                    width: 100%;
+                                    top: 0px;
+                                    right: -570px;
+                                    background: white;
+                                    position: absolute;
+                                }
+                            }
+                            &:hover ul{
+                                display: flex;
+                            }
+                        }
+                    }
+                    &:hover > ul{
+                        display: block;
+                    }
+                    .leftPanelIcon{
+                        color: white;
+                    }
+
+                }
+                .col-3:nth-child(2), .sav{
+                    cursor: pointer;
+                    // background: #4285f4;
+                    > div{
+                        color: #4285f4;
+                        text-decoration: none;
+                        .leftPanelIcon{
+                            // line-height: 40px;
+                            align-items: center;
+                            > span{
+                                background: #4285f4;
+                                color: white;
+                                padding: 10px;
+                                // background: #4285f4;
+                                // line-height: 40px;
+                                align-self: center;
+                                font-size: 14px;
+                                border-radius: 8px;
+                            }
+                        }
+                        .leftPanelText{
+                            > span{
+                                padding: 2px 5px;
+                                background: #4285f4;
+                                color: white;
+                                border-radius: 8px;
+                            }
+                        }
+                    }
+                }
+                .col-2{
+                    border-left: 1px solid #e5e7e7;
+                    // border-radius: 10px;
+                    padding: 0px;
+                    .leftPanelIcon{
+                        padding: 2px 5px 2px 5px;
+                        > span{
+                            align-self: center;
+                            font-size: 15px;
+                        }
+                    }
+                    .leftPanelText{
+                        padding: 0px;
+                        margin: 0px;
+                        text-align: left;
+                        font: 12px 'Montserrat Bold'!important;
+                    }
+                    &:hover{
+                        span{
+                            // color: #4285f4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

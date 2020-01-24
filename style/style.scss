@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Medium.ttf"); }
+  
+  @font-face {
+    font-family: 'Montserrat Regular';
+    src: url("../fonts/Montserrat-Regular.ttf"); }
+  
+  @font-face {
+    font-family: 'Montserrat Bold';
+    src: url("../fonts/Montserrat-Bold.ttf"); }
+  
+  @font-face {
+    font-family: 'Montserrat Thin';
+    src: url("../fonts/Montserrat-Thin.ttf"); }
+  
+  @font-face {
+    font-family: 'Montserrat Medium';
+    src: url("../fonts/Montserrat-Medium.ttf"); }
+  
+  @font-face {
+    font-family: 'Montserrat Extra-Light';
+    src: url("../fonts/Montserrat-ExtraLight.ttf"); }
+  
+  @font-face {
+    font-family: 'Montserrat Extra-Bold';
+    src: url("../fonts/Montserrat-ExtraBold.ttf"); }
+@font-face {
+        font-family: 'Ubuntu Regular';
+        src: url("../fonts/UbuntuRegular.ttf"); }
+@font-face {
+        font-family: 'Ubuntu Bold';
+        src: url("../fonts/UbuntuBold.ttf"); }    
+
+@import 'head.scss';
+@import 'main.scss';
+@import 'footer.scss';

@@ -1,0 +1,1246 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.ttf");
+}
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("../fonts/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: "Montserrat Thin";
+  src: url("../fonts/Montserrat-Thin.ttf");
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  src: url("../fonts/Montserrat-Medium.ttf");
+}
+@font-face {
+  font-family: "Montserrat Extra-Light";
+  src: url("../fonts/Montserrat-ExtraLight.ttf");
+}
+@font-face {
+  font-family: "Montserrat Extra-Bold";
+  src: url("../fonts/Montserrat-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "Ubuntu Regular";
+  src: url("../fonts/UbuntuRegular.ttf");
+}
+@font-face {
+  font-family: "Ubuntu Bold";
+  src: url("../fonts/UbuntuBold.ttf");
+}
+.asosiy {
+  background: #fafafa;
+  padding: 0px;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 auto;
+}
+.asosiy .enterModal {
+  top: 0px;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  color: #5f6368;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 111;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.asosiy .enterModal .enterModalForm {
+  -webkit-box-shadow: 0px 0px 10px 5px #f1f3f4;
+          box-shadow: 0px 0px 10px 5px #f1f3f4;
+  background: #fff;
+  width: 40%;
+  margin: 0 auto;
+  border: 1px solid #f1f3f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font: 14px "Montserrat";
+}
+.asosiy .enterModal .enterModalForm .enterModalFormHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-left: 4px solid #4285f4;
+}
+.asosiy .enterModal .enterModalForm .enterModalFormHead .enterModalFormHeadTitle {
+  text-transform: uppercase;
+  font: 15px "Montserrat Bold";
+  line-height: 40px;
+  padding: 5px 0px 5px 20px;
+}
+.asosiy .enterModal .enterModalForm .enterModalFormHead .enterModalFormHeadClose {
+  cursor: pointer;
+  padding: 5px 20px 5px 20px;
+  line-height: 40px;
+  color: white;
+  background: #4285f4;
+}
+.asosiy .enterModal .enterModalForm .enterModalFormMain {
+  padding: 10px;
+  font: 12px "Montserrat Bold";
+  line-height: 35px;
+  text-transform: uppercase;
+}
+.asosiy .enterModal .enterModalForm .enterModalFormMain > form {
+  padding: 0px;
+}
+.asosiy .enterModal .enterModalForm .enterModalFormMain > form > input[type=text], .asosiy .enterModal .enterModalForm .enterModalFormMain > form > input[type=password] {
+  background: white;
+  border: 0px;
+  border-bottom: 1px solid #4285f5;
+  padding: 5px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  outline: none;
+  font: 10px "Ubuntu Bold";
+}
+.asosiy .enterModal .enterModalForm .enterModalFormMain > form > .col-lg-1 {
+  cursor: pointer;
+}
+.asosiy .enterModal .enterModalForm .enterModalFormMain > form .enterModalPasswordRecovery {
+  line-height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.asosiy .enterModal .enterModalForm .enterModalFormMain > form .enterModalPasswordRecovery > a {
+  outline: none;
+  color: #5f6368;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-transform: uppercase;
+}
+.asosiy .enterModal .enterModalForm .enterModalFormMain > form .enterModalPasswordRecovery > input[type=submit] {
+  border: 1px solid #4285f5;
+  color: white;
+  background: #4285f5;
+  padding: 5px 40px;
+  line-height: 30px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.asosiy .enterModal .enterModalForm .enterModalFormMain > form .enterModalPasswordRecovery > input[type=submit]:hover {
+  background: #4285d2;
+}
+.asosiy .signinModal {
+  top: 0px;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  color: #5f6368;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 111;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.asosiy .signinModal .signinModalForm {
+  -webkit-box-shadow: 0px 0px 10px 5px #f1f3f4;
+          box-shadow: 0px 0px 10px 5px #f1f3f4;
+  background: #fff;
+  width: 40%;
+  margin: 0 auto;
+  border: 1px solid #f1f3f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font: 14px "Montserrat";
+}
+.asosiy .signinModal .signinModalForm .signinModalFormHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-left: 4px solid #4285f4;
+}
+.asosiy .signinModal .signinModalForm .signinModalFormHead .signinModalFormHeadTitle {
+  text-transform: uppercase;
+  font: 15px "Ubuntu Bold";
+  line-height: 40px;
+  padding: 5px 0px 5px 20px;
+}
+.asosiy .signinModal .signinModalForm .signinModalFormHead .signinModalFormHeadClose {
+  cursor: pointer;
+  padding: 5px 20px 5px 20px;
+  line-height: 40px;
+  color: white;
+  background: #4285f4;
+}
+.asosiy .signinModal .signinModalForm .signinModalFormMain {
+  padding: 10px;
+  font: 12px "Montserrat Bold";
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.asosiy .signinModal .signinModalForm .signinModalFormMain > form {
+  padding: 0px;
+}
+.asosiy .signinModal .signinModalForm .signinModalFormMain > form > input[type=text], .asosiy .signinModal .signinModalForm .signinModalFormMain > form > input[type=password] {
+  background: white;
+  border: 0px;
+  border-bottom: 1px solid #4285f5;
+  padding: 5px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  outline: none;
+  font: 10px "Ubuntu Bold";
+}
+.asosiy .signinModal .signinModalForm .signinModalFormMain > form .signinModalPasswordRecovery {
+  line-height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.asosiy .signinModal .signinModalForm .signinModalFormMain > form .signinModalPasswordRecovery > a {
+  outline: none;
+  color: #5f6368;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-transform: uppercase;
+}
+.asosiy .signinModal .signinModalForm .signinModalFormMain > form .signinModalPasswordRecovery > input[type=submit] {
+  border: 1px solid #4285f5;
+  color: white;
+  background: #4285f5;
+  padding: 5px 40px;
+  line-height: 30px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.asosiy .signinModal .signinModalForm .signinModalFormMain > form .signinModalPasswordRecovery > input[type=submit]:hover {
+  background: #4285d2;
+}
+.asosiy header {
+  z-index: 110;
+  background: white;
+  width: 100%;
+  margin-bottom: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 0px;
+  top: 0;
+  -webkit-box-shadow: 0px 1px 10px 0px #5f6368;
+          box-shadow: 0px 1px 10px 0px #5f6368;
+}
+.asosiy header .topPan > div.row:first-child {
+  line-height: 90px;
+}
+.asosiy header .topPan > div.row:first-child div.logo {
+  text-transform: uppercase;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font: 28px "Ubuntu Bold";
+}
+.asosiy header .topPan > div.row:first-child div.logo > span {
+  color: #4285f4;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB {
+  height: 90px;
+  margin: 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .topRightGuests {
+  text-align: right;
+  padding: 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .topRightGuests a {
+  cursor: pointer;
+  padding: 0px;
+  font: 13px "Montserrat Bold";
+  color: #5f6368;
+  text-transform: uppercase;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .topRightGuests > span {
+  line-height: 1px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #e5e7e7;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .topRightPanel {
+  text-align: right;
+  padding: 10px !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .topRightPanel .link {
+  padding: 0px;
+  font: 13px "Montserrat Bold";
+  color: #5f6368;
+  text-transform: uppercase;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .topRightPanel .link > a {
+  color: #5f6368;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .topRightPanel .link > .rightPanelDrop {
+  -webkit-box-shadow: 3px 3px 3px 0px #f1f3f4;
+          box-shadow: 3px 3px 3px 0px #f1f3f4;
+  text-align: left;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  background: white;
+  display: none;
+  font: 11px "Montserrat Bold";
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .topRightPanel .link > .rightPanelDrop > a {
+  text-decoration: none;
+  color: #5c6c79;
+  line-height: 25px;
+  display: block;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .topRightPanel .link > .rightPanelDrop > a > span:first-child {
+  padding: 5px;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .topRightPanel .link > .rightPanelDrop > a > span:nth-child(2) {
+  padding: 2px 6px;
+  line-height: 25px;
+  border-radius: 10px;
+  background: #4285f4;
+  color: white;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .topRightPanel .link:hover > .rightPanelDrop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .topRightPanel > span {
+  line-height: 1px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #e5e7e7;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB form {
+  line-height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB form:hover {
+  -webkit-box-shadow: 1px 1px 5px 1px #f1f3f4;
+          box-shadow: 1px 1px 5px 1px #f1f3f4;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB form > .col-1:nth-child(1) {
+  line-height: 40px;
+  padding: 4px 0px 4px 10px !important;
+  background: #f1f3f4;
+  border-radius: 8px 0px 0px 8px;
+  border: 2px solid #f1f3f4;
+  color: #5f6368;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB form > .fa {
+  line-height: 40px;
+  padding: 4px;
+  border: 2px solid #f1f3f4;
+  background: #f1f3f4;
+  color: #5f6368;
+  border-radius: 0px 8px 8px 0px;
+  cursor: pointer;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB form > input[type=text] {
+  border: 2px solid #f1f3f4;
+  background: #f1f3f4;
+  line-height: 40px;
+  padding: 4px 0px 4px 10px !important;
+  margin-left: 0px;
+  margin-right: 0px;
+  outline: none;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .searchResults {
+  z-index: 1;
+  width: 100%;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+  background: white;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .searchResults > .allResults {
+  width: 100%;
+  background: white;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .searchResults > .allResults > a {
+  text-decoration: underline;
+  text-transform: uppercase;
+  width: 100%;
+  font: 12px "Montserrat Bold";
+  text-align: center;
+  margin: 0 auto;
+  line-height: 30px;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .searchResults > .allResults > div {
+  border: 1px solid #f1f3f4;
+  color: #5c6c79;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .searchResults > .allResults > div > * {
+  color: #5c6c79;
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 0px;
+  font: 12px "Montserrat Bold";
+  text-transform: uppercase;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .searchResults > .allResults > div > .col-3 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: 1px solid #f1f3f4;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .searchResults > .allResults > div > .col-9 > .row:first-child {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .searchResults > .allResults > div > .col-9 > .row:first-child > a {
+  margin-left: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  line-height: 40px;
+  text-decoration: none;
+  color: #4285f4;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .searchResults > .allResults > div > .col-9 > .row:first-child > .col-4 {
+  text-align: center;
+  color: #4285f4;
+  margin: 5px;
+  text-decoration: underline;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 15px;
+  line-height: 30px;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .searchResults > .allResults > div > .col-9 > .row:nth-child(2) {
+  line-height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .searchResults > .allResults > div > .col-9 > .row:nth-child(2) .resultButtonView {
+  margin: 5px 20px 5px 20px;
+  line-height: 30px;
+  padding: 5px 10px;
+  background: white;
+  color: #4285f4;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .searchResults > .allResults > div > .col-9 > .row:nth-child(2) .resultButtonAddToWallet {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 5px 20px 5px 20px;
+  line-height: 30px;
+  padding: 2px 10px;
+  background: #4285f4;
+  color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .searchResults > .allResults > div > .col-9 > .row:nth-child(2) .resultButtonAddToWallet:hover {
+  cursor: pointer;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .hideSearchPanel {
+  display: none !important;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .searchPanel {
+  display: block;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: white;
+  left: 0px;
+  position: absolute;
+  color: #5f6368;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .searchPanel > form {
+  padding: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left !important;
+  font: 12px "Montserrat Bold";
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 10px 0px #d9dbdb;
+          box-shadow: 0px 1px 10px 0px #d9dbdb;
+  background: white;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .searchPanel > form .header > * {
+  border: 0px;
+  color: #5f6368;
+  outline: none;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .searchPanel > form .header label {
+  padding: 5px;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .searchPanel > form .header:first-child > select {
+  padding: 10px;
+  border-bottom: 1px solid #f1f3f4;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .searchPanel > form .header:nth-child(2) > input[type=number] {
+  border-bottom: 1px solid #f1f3f4;
+  padding: 5px;
+  margin-left: 5px;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .searchPanel > form .header:nth-child(2) > span {
+  font-size: 9px;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .searchPanel > form .header:nth-child(3) > input[type=text] {
+  padding: 5px;
+  border-bottom: 1px solid #f1f3f4;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .searchPanel > form .header:nth-child(4) {
+  padding: 5px;
+}
+.asosiy header .topPan > div.row:first-child div.topPaB .searchPanel > form .header:nth-child(4) > input[type=submit] {
+  background: #4285f4;
+  color: white;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  border: 1px solid #4285f4;
+  border-radius: 5px;
+  font: 12px "Montserrat Bold";
+}
+.asosiy header .topPan > div.row:nth-child(2) {
+  border-top: 1px solid #f1f3f4;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+.asosiy header .topPan > div.row:nth-child(2) .hideWalletPanel {
+  display: none !important;
+}
+.asosiy header .topPan > div.row:nth-child(2) .col, .asosiy header .topPan > div.row:nth-child(2) .col-3, .asosiy header .topPan > div.row:nth-child(2) .col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.asosiy header .topPan > div.row:nth-child(2) .col .leftPanel, .asosiy header .topPan > div.row:nth-child(2) .col-3 .leftPanel, .asosiy header .topPan > div.row:nth-child(2) .col-2 .leftPanel {
+  width: 100%;
+  margin: 0px 15px 0px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.asosiy header .topPan > div.row:nth-child(2) .col .leftPanel .leftPanelIcon, .asosiy header .topPan > div.row:nth-child(2) .col-3 .leftPanel .leftPanelIcon, .asosiy header .topPan > div.row:nth-child(2) .col-2 .leftPanel .leftPanelIcon {
+  padding: 5px;
+  font-size: 20px;
+  color: #4285f4;
+}
+.asosiy header .topPan > div.row:nth-child(2) .col .leftPanel .leftPanelText, .asosiy header .topPan > div.row:nth-child(2) .col-3 .leftPanel .leftPanelText, .asosiy header .topPan > div.row:nth-child(2) .col-2 .leftPanel .leftPanelText {
+  padding: 5px;
+  font: 14px "Montserrat Bold";
+}
+.asosiy header .topPan > div.row:nth-child(2) .col-3 {
+  padding: 0px 20px 0px 20px;
+}
+.asosiy header .topPan > div.row:nth-child(2) .col-3 .savatchaniKorish {
+  position: absolute;
+  margin-top: 50px;
+  background: black;
+  width: 100%;
+  color: white;
+  line-height: 50px;
+}
+.asosiy header .topPan > div.row:nth-child(2) .col {
+  word-wrap: break-word;
+  font: 8px "Montserrat Bold" !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.asosiy header .topPan > div.row:nth-child(2) .col a {
+  line-height: 40px;
+  margin: 0px;
+  padding: 0px 5px;
+}
+.asosiy header .topPan > div.row:nth-child(2) .col a:hover {
+  color: #4285f4;
+}
+.asosiy header .topPan > div.row:nth-child(2) .col a .leftPanelText, .asosiy header .topPan > div.row:nth-child(2) .col a .leftPanelIcon {
+  line-height: 40px;
+  font: 10px "Ubuntu Bold";
+}
+.asosiy header .topPan > div.row:nth-child(2) > .col-3:first-child {
+  border-right: 1px solid #e5e7e7;
+  background: #4285f4;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.asosiy header .topPan > div.row:nth-child(2) > .col-3:first-child > ul {
+  display: none;
+  background: white;
+  list-style: none;
+  position: absolute;
+  top: 50px;
+  padding: 0px;
+  width: 100%;
+}
+.asosiy header .topPan > div.row:nth-child(2) > .col-3:first-child > ul > li {
+  border-bottom: 1px solid #f1f3f4;
+  text-decoration: none;
+  color: #5c6c79;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.asosiy header .topPan > div.row:nth-child(2) > .col-3:first-child > ul > li a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #5c6c79;
+}
+.asosiy header .topPan > div.row:nth-child(2) > .col-3:first-child > ul > li a > span {
+  display: block;
+}
+.asosiy header .topPan > div.row:nth-child(2) > .col-3:first-child > ul > li a > span:first-child {
+  line-height: 25px;
+  text-align: center;
+  width: 40px;
+  padding: 8px;
+}
+.asosiy header .topPan > div.row:nth-child(2) > .col-3:first-child > ul > li a > span:nth-child(2) {
+  text-transform: none;
+  line-height: 30px;
+  font: 14px "Montserrat";
+}
+.asosiy header .topPan > div.row:nth-child(2) > .col-3:first-child > ul > li a:hover {
+  background: #f1f3f4;
+}
+.asosiy header .topPan > div.row:nth-child(2) > .col-3:first-child > ul > li > ul {
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: white;
+  position: absolute;
+  padding: 0px;
+  list-style: none;
+  width: 100%;
+}
+.asosiy header .topPan > div.row:nth-child(2) > .col-3:first-child > ul > li > ul li:first-child {
+  top: 0px;
+  right: -285px;
+  border-bottom: 1px solid #f1f3f4;
+  text-decoration: none;
+  color: #5c6c79;
+  width: 100%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+}
+.asosiy header .topPan > div.row:nth-child(2) > .col-3:first-child > ul > li > ul li:first-child .kategoriyaNomi {
+  padding: 5px;
+  font: 12px "Montserrat Bold";
+}
+.asosiy header .topPan > div.row:nth-child(2) > .col-3:first-child > ul > li > ul li:first-child > a {
+  font: 10px "Montserrat Bold";
+}
+.asosiy header .topPan > div.row:nth-child(2) > .col-3:first-child > ul > li > ul li:nth-child(2) {
+  width: 100%;
+  top: 0px;
+  right: -570px;
+  background: white;
+  position: absolute;
+}
+.asosiy header .topPan > div.row:nth-child(2) > .col-3:first-child > ul > li:hover ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.asosiy header .topPan > div.row:nth-child(2) > .col-3:first-child:hover > ul {
+  display: block;
+}
+.asosiy header .topPan > div.row:nth-child(2) > .col-3:first-child .leftPanelIcon {
+  color: white;
+}
+.asosiy header .topPan > div.row:nth-child(2) .col-3:nth-child(2), .asosiy header .topPan > div.row:nth-child(2) .sav {
+  cursor: pointer;
+}
+.asosiy header .topPan > div.row:nth-child(2) .col-3:nth-child(2) > div, .asosiy header .topPan > div.row:nth-child(2) .sav > div {
+  color: #4285f4;
+  text-decoration: none;
+}
+.asosiy header .topPan > div.row:nth-child(2) .col-3:nth-child(2) > div .leftPanelIcon, .asosiy header .topPan > div.row:nth-child(2) .sav > div .leftPanelIcon {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.asosiy header .topPan > div.row:nth-child(2) .col-3:nth-child(2) > div .leftPanelIcon > span, .asosiy header .topPan > div.row:nth-child(2) .sav > div .leftPanelIcon > span {
+  background: #4285f4;
+  color: white;
+  padding: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 14px;
+  border-radius: 8px;
+}
+.asosiy header .topPan > div.row:nth-child(2) .col-3:nth-child(2) > div .leftPanelText > span, .asosiy header .topPan > div.row:nth-child(2) .sav > div .leftPanelText > span {
+  padding: 2px 5px;
+  background: #4285f4;
+  color: white;
+  border-radius: 8px;
+}
+.asosiy header .topPan > div.row:nth-child(2) .col-2 {
+  border-left: 1px solid #e5e7e7;
+  padding: 0px;
+}
+.asosiy header .topPan > div.row:nth-child(2) .col-2 .leftPanelIcon {
+  padding: 2px 5px 2px 5px;
+}
+.asosiy header .topPan > div.row:nth-child(2) .col-2 .leftPanelIcon > span {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 15px;
+}
+.asosiy header .topPan > div.row:nth-child(2) .col-2 .leftPanelText {
+  padding: 0px;
+  margin: 0px;
+  text-align: left;
+  font: 12px "Montserrat Bold" !important;
+}
+:root {
+  --main-color: #e74c3c;
+}
+
+.mainContent {
+  border: 1px solid #eeeeee;
+  padding: 20px 20px 20px 20px;
+  width: 100%;
+  background: white;
+  z-index: 0;
+}
+.mainContent .contentHeader {
+  line-height: 40px;
+  padding: 10px;
+  text-transform: uppercase;
+  font: 15px "Montserrat Bold";
+  margin: 0px 0px 20px 0px;
+  color: #5f6368;
+}
+.mainContent .contentHeader > a {
+  text-decoration: none;
+  border-radius: 5px;
+  margin-left: 20px;
+  background: #4285f4;
+  color: white;
+  padding: 5px 10px;
+}
+.mainContent .contentHeader > img {
+  fill: #4285f4;
+}
+
+.mainContent2 {
+  border: 1px solid #eeeeee;
+  padding: 0px 20px 20px 20px;
+  width: 100%;
+  background: white;
+  z-index: 0;
+  position: relative;
+  margin-top: 10px;
+}
+.mainContent2 .contentHeader {
+  line-height: 40px;
+  padding: 10px;
+  text-transform: uppercase;
+  font: 15px "Montserrat Bold";
+  margin: 20px 0px;
+  color: #5f6368;
+}
+.mainContent2 .contentHeader > a {
+  text-decoration: none;
+  border-radius: 5px;
+  margin-left: 20px;
+  background: #4285f4;
+  color: white;
+  padding: 5px 10px;
+}
+.mainContent2 .contentHeader > img {
+  fill: #4285f4;
+}
+
+.mainContent3 {
+  width: 100%;
+  height: 70px;
+  z-index: 0;
+  position: relative;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.mainContent3 > a.col-lg-6 {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product-grid {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+
+.product-grid .product-image {
+  overflow: hidden;
+  position: relative;
+}
+
+.product-grid .product-image:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+
+.product-grid:hover .product-image:before {
+  opacity: 1;
+}
+
+.product-grid .product-image a {
+  display: block;
+}
+
+.product-grid .product-image img {
+  width: 100%;
+  height: auto;
+}
+
+.product-image .pic-1 {
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+
+.product-grid:hover .product-image .pic-1 {
+  opacity: 0;
+}
+
+.product-image .pic-2 {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: scale(3);
+      -ms-transform: scale(3);
+          transform: scale(3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+
+.product-grid:hover .product-image .pic-2 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.product-image .product-trend-label,
+.product-image .product-discount-label {
+  content: "";
+  color: #fff;
+  padding: 2px 5px;
+  background-color: #2ecc71;
+  font-size: 8px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 7;
+}
+
+.product-image .product-discount-label {
+  background-color: var(--main-color);
+  left: auto;
+  right: 12px;
+}
+
+.product-grid .social {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -webkit-transform: translateY(-40%);
+      -ms-transform: translateY(-40%);
+          transform: translateY(-40%);
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  z-index: 4;
+}
+
+.product-grid .social li {
+  margin: 0 0 8px;
+  opacity: 0;
+  -webkit-transform: translateX(-60px);
+      -ms-transform: translateX(-60px);
+          transform: translateX(-60px);
+  -webkit-transition: -webkit-transform 0.3s ease-out 0s;
+  transition: -webkit-transform 0.3s ease-out 0s;
+  -o-transition: transform 0.3s ease-out 0s;
+  transition: transform 0.3s ease-out 0s;
+  transition: transform 0.3s ease-out 0s, -webkit-transform 0.3s ease-out 0s;
+}
+
+.product-grid:hover .social li {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.product-grid:hover .social li:nth-child(2) {
+  -webkit-transition-delay: 0.1s;
+       -o-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.product-grid:hover .social li:nth-child(3) {
+  -webkit-transition-delay: 0.2s;
+       -o-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.product-grid:hover .social li:nth-child(4) {
+  -webkit-transition-delay: 0.3s;
+       -o-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.product-grid .social li a {
+  color: #fff;
+  font-size: 18px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  word-wrap: normal;
+}
+
+.product-grid .social li a:hover {
+  color: var(--main-color);
+}
+
+.product-grid .social li a:before,
+.product-grid .social li a:after {
+  content: attr(data-tip);
+  color: #000;
+  background: #fff;
+  font-size: 14px;
+  padding: 5px 10px;
+  white-space: nowrap;
+  display: none;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  left: 33px;
+  top: 50%;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.product-grid .social li a:after {
+  content: "";
+  background: -o-linear-gradient(135deg, #fff 49%, transparent 50%);
+  background: linear-gradient(-45deg, #fff 49%, transparent 50%);
+  width: 10px;
+  height: 10px;
+  top: 40%;
+  left: 20px;
+}
+
+.product-grid .social li a:hover:before,
+.product-grid .social li a:hover:after {
+  display: block;
+}
+
+.product-grid .product-content {
+  padding: 12px 0;
+}
+
+.product-grid .title {
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin: 0 0 5px;
+}
+
+.product-grid .title a {
+  color: #959595;
+}
+
+.product-grid .title a:hover {
+  color: var(--main-color);
+}
+
+.product-grid .price {
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.product-grid .price span {
+  color: #333;
+  text-decoration: line-through;
+  margin-right: 3px;
+}
+
+.product-content .product-buy {
+  color: #4285f4;
+  width: 100%;
+  text-align: center;
+  padding: 3px 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  border: 1px solid #4285f4;
+  margin-top: 4px;
+  cursor: pointer;
+  opacity: 0;
+}
+.product-content .product-buy > span:nth-child(2) {
+  font: 11px "Montserrat Bold";
+}
+
+.product-grid:hover .product-buy {
+  opacity: 1;
+}
+.product-grid:hover .product-buy:hover {
+  background: #4285f4;
+  color: white;
+  border: 1px solid white;
+}
+
+.col-lg-2 {
+  margin-left: 35px !important;
+}
+
+.product-grid .price.discount {
+  color: var(--main-color);
+}
+
+@media only screen and (max-width: 990px) {
+  .product-grid {
+    margin-bottom: 30px;
+  }
+}
+footer {
+  margin-top: 20px;
+  background: #fafafa;
+  border: 1px solid #eeeeee;
+}
